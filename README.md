@@ -26,3 +26,7 @@ Build and run the test using:
 mvn clean test
 ```
 
+# Countercheck on Hibernate
+
+1. Switch to branch `hibernate`
+1. `mvn clean test`
