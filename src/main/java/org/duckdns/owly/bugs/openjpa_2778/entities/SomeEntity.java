@@ -10,7 +10,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class SomeEntity {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.TABLE, generator = "SequenceTableGen")
+    @TableGenerator(name = "SequenceTableGen", table = "OPENJPA_SEQUENCE_TABLE", pkColumnName = "id", valueColumnName = "sequence_value")
     private Long id;
 
     @Column(length = 4000)
