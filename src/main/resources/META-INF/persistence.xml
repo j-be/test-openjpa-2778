@@ -3,7 +3,7 @@
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0">
     <persistence-unit name="SomeUnit">
-        <provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>org.duckdns.owly.bugs.openjpa_2778.entities.SomeEntity</class>
         <validation-mode>CALLBACK</validation-mode>
 
@@ -13,8 +13,7 @@
             <property name="javax.persistence.jdbc.user" value="DbUser"/>
             <property name="javax.persistence.jdbc.password" value="DbPassword"/>
 
-            <property name="openjpa.ConnectionDriverName" value="oracle.jdbc.driver.OracleDriver"/>
-            <property name="openjpa.Log" value="log4j"/>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver"/>
         </properties>
     </persistence-unit>
 </persistence>
