@@ -69,18 +69,8 @@
         </dependency>
         <dependency>
             <groupId>com.oracle.jdbc</groupId>
-            <artifactId>ojdbc7</artifactId>
-            <version>12.1.0.2</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.oracle.jdbc</groupId>
-                    <artifactId>xmlparserv2</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.oracle.jdbc</groupId>
-                    <artifactId>oraclepki</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>ojdbc10</artifactId>
+            <version>19.3.0.0.0</version>
         </dependency>
 
         <!-- Bean Validation -->
