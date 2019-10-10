@@ -9,9 +9,9 @@
 
         <properties>
             <!-- TODO: Change the following 3 properties to match your setup -->
-            <property name="openjpa.ConnectionURL" value="jdbc:oracle:thin:@db.example.com:1521:DB"/>
-            <property name="openjpa.ConnectionUserName" value="DbUser"/>
-            <property name="openjpa.ConnectionPassword" value="DbPassword"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@db.example.com:1521:DB"/>
+            <property name="javax.persistence.jdbc.user" value="DbUser"/>
+            <property name="javax.persistence.jdbc.password" value="DbPassword"/>
 
             <property name="openjpa.ConnectionDriverName" value="oracle.jdbc.driver.OracleDriver"/>
             <property name="openjpa.Log" value="log4j"/>
